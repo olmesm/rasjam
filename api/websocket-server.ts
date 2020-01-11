@@ -4,13 +4,10 @@ export const startServer = (io: Server) => {
   io.on("connection", (socket: Socket) => {
     console.log("a user connected");
 
+    socket.emit("message", "hello");
+
     socket.on("disconnect", () => {
       console.log("user disconnected");
-    });
-
-    socket.on("chat message", (msg: string) => {
-      console.log(`message: ${msg}`);
-      io.emit("chat message", msg);
     });
   });
 };

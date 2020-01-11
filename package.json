@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "npm run react:start",
-    "start:api": "nodemon",
+    "start:api": "concurrently '. ./nginx/start.sh' 'nodemon'",
     "react:start": "react-scripts start",
     "build": "npm run react:build",
     "react:build": "react-scripts build",
@@ -46,6 +46,7 @@
   },
   "devDependencies": {
     "@types/micro": "^7.3.3",
+    "@types/socket.io-client": "^1.4.32",
     "concurrently": "^5.0.2",
     "nodemon": "^2.0.2",
     "prettier": "^1.19.1"
