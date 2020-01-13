@@ -14,3 +14,7 @@ npm i
 
 npm start
 ```
+
+<!--  -->
+
+curl -k http://www.radio-browser.info/webservice/json/stations > server/data/web-stations.json

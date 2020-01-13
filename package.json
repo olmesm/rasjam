@@ -1,7 +1,8 @@
 {
   "name": "rasjam",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "author": "github.com/olmesm",
+  "description": "Made with a real Raspberry",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
